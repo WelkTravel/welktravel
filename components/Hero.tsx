@@ -8,8 +8,8 @@ export default function Hero() {
           <Image
             src="/isotipo.png"
             alt="Welk Travel"
-            width={992}
-            height={1058}
+            width={873}
+            height={834}
             className="w-full h-auto"
             priority
           />

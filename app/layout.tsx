@@ -56,8 +56,8 @@ export default function RootLayout({
               <Image
                 src="/isotipo.png"
                 alt="Welk Travel"
-                width={42}
-                height={45}
+                width={46}
+                height={44}
                 className="h-11 w-auto"
                 priority
               />
