@@ -42,3 +42,4 @@ dinámicos.
 - [ ] Completar la política de tratamiento de datos con la razón social real y hacerla revisar por un abogado
 - [ ] Reemplazar `welktravel.com` (dominio de ejemplo) por el dominio real en `layout.tsx`, `robots.ts` y `sitemap.ts`
 - [ ] Cargar productos y testimonios reales en Supabase
+" " 
