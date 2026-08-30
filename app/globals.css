@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  /* Azul Océano Profundo — dominante (60%): nav, footer, encabezados y texto principal */
+  --color-navy: #0B3D5C;
+  --color-navy-light: #2E6E94;
+  --color-navy-deep: #062A40;
+
+  /* Blanco Puro y Gris Nube — fondos (30%): áreas amplias de lectura */
+  --color-white: #FFFFFF;
+  --color-cloud: #EEF2F6;
+
+  /* Dorado Trópico / Oro Cálido — acento (10%), uso exclusivo en CTAs */
+  --color-gold: #D9A441;
+  --color-gold-dark: #B8842A;
+
+  /* Texto secundario sobre fondo claro */
+  --color-slate: #47576B;
+
+  /* Texto sobre fondos navy (header, footer, barra legal) */
+  --color-cream: #F5F5F5;
+  --color-mist: #A9C4DA;
+
+  --color-error: #B5603F;
+
+  --font-title: var(--font-playfair);
+  --font-body: var(--font-montserrat);
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+  font-family: var(--font-body);
+}
