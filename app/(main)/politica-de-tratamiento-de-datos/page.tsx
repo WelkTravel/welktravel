@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Política de tratamiento de datos — Welk Travel',
+  title: 'Política de privacidad y tratamiento de datos personales — Welk Travel',
   description: 'Política de tratamiento de datos personales de Welk Travel.',
 };
 
 export default function PoliticaDatosPage() {
   return (
-    <section className="bg-cream px-6 py-16">
+    <section className="bg-white px-6 py-16">
       <div className="max-w-3xl mx-auto">
         <h1 className="font-title text-2xl text-navy font-semibold mb-2">
           Política de tratamiento de datos personales
@@ -16,9 +16,9 @@ export default function PoliticaDatosPage() {
           [Última actualización: completar antes de publicar]
         </p>
 
-        <div className="font-body text-sm text-navy/80 flex flex-col gap-5">
+        <div className="font-body text-sm text-navy/80 flex flex-col gap-5 text-justify">
           <p>
-            Welk Travel [completar razón social y NIT] (&ldquo;Welk Travel&rdquo;, &ldquo;nosotros&rdquo;)
+            Welk Travel, NIT 902.087.020-3 (&ldquo;Welk Travel&rdquo;, &ldquo;nosotros&rdquo;),
             es responsable del tratamiento de los datos personales que recolecta a través
             de este sitio web, en cumplimiento de la Ley 1581 de 2012, el Decreto 1377
             de 2013 y demás normas que las modifiquen o complementen en Colombia.

@@ -54,7 +54,7 @@ export default function FormularioCotizar({ origenRuta }: { origenRuta: string }
 
   return (
     <form onSubmit={handleSubmit} className="text-left w-full max-w-sm">
-      <label className="font-body text-xs text-mauve block mb-1">
+      <label className="font-body text-xs text-mist block mb-1">
         ¿A qué destino internacional deseas viajar?
       </label>
       <input
@@ -66,12 +66,12 @@ export default function FormularioCotizar({ origenRuta }: { origenRuta: string }
         }}
         placeholder="Ej. Cancún, Punta Cana, Europa..."
         disabled={enviando}
-        className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-mid text-cream outline-none border disabled:opacity-60 ${
+        className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-deep text-cream outline-none border disabled:opacity-60 ${
           estado === 'error' && !destino.trim() ? 'border-error' : 'border-navy-light'
         }`}
       />
 
-      <label className="font-body text-xs text-mauve block mb-1 mt-3">
+      <label className="font-body text-xs text-mist block mb-1 mt-3">
         Nombre completo
       </label>
       <input
@@ -83,12 +83,12 @@ export default function FormularioCotizar({ origenRuta }: { origenRuta: string }
         }}
         placeholder="Tu nombre"
         disabled={enviando}
-        className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-mid text-cream outline-none border disabled:opacity-60 ${
+        className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-deep text-cream outline-none border disabled:opacity-60 ${
           estado === 'error' && !nombre.trim() ? 'border-error' : 'border-navy-light'
         }`}
       />
 
-      <label className="font-body text-xs text-mauve block mb-1 mt-3">
+      <label className="font-body text-xs text-mist block mb-1 mt-3">
         WhatsApp de contacto
       </label>
       <input
@@ -100,7 +100,7 @@ export default function FormularioCotizar({ origenRuta }: { origenRuta: string }
         }}
         placeholder="300 123 4567"
         disabled={enviando}
-        className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-mid text-cream outline-none border disabled:opacity-60 ${
+        className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-deep text-cream outline-none border disabled:opacity-60 ${
           estado === 'error' && !whatsapp.trim() ? 'border-error' : 'border-navy-light'
         }`}
       />
@@ -119,7 +119,7 @@ export default function FormularioCotizar({ origenRuta }: { origenRuta: string }
       <button
         type="submit"
         disabled={enviando}
-        className="w-full mt-4 bg-gold text-navy text-sm font-body font-medium py-2.5 rounded disabled:opacity-60"
+        className="w-full mt-4 bg-gold text-navy text-sm font-body font-medium py-2.5 rounded hover:bg-gold-dark transition-colors disabled:opacity-60"
       >
         {enviando ? 'Enviando...' : 'Recibir mi itinerario personalizado gratis'}
       </button>

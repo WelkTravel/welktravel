@@ -31,17 +31,17 @@ export default async function Testimonios() {
   const lista = data && data.length > 0 ? data : testimoniosEjemplo;
 
   return (
-    <section className="bg-cream px-6 py-10">
-      <p className="font-body text-xs text-navy/60 mb-3 max-w-6xl mx-auto">
+    <section className="bg-white px-6 py-10">
+      <p className="font-body text-xs text-navy font-medium mb-3 max-w-6xl mx-auto">
         Testimonios de clientes
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-6xl mx-auto">
         {lista.map((t) => (
           <div
             key={t.id}
-            className="bg-white border border-navy-light rounded-md p-3"
+            className="bg-white border border-cloud rounded-md p-3"
           >
-            <p className="font-body text-sm text-navy">
+            <p className="font-body text-sm text-navy text-justify">
               &ldquo;{t.texto}&rdquo; — {t.nombre}
             </p>
           </div>

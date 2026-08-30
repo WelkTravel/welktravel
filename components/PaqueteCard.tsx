@@ -23,7 +23,7 @@ export default function PaqueteCard({ paquete }: { paquete: Paquete }) {
   return (
     <div
       className={`bg-white rounded-md overflow-hidden border flex flex-col ${
-        paquete.destacado ? 'border-2 border-gold' : 'border-navy-light'
+        paquete.destacado ? 'border-2 border-navy' : 'border-cloud'
       }`}
     >
       <div className="relative h-40 bg-gray-100">
@@ -50,7 +50,7 @@ export default function PaqueteCard({ paquete }: { paquete: Paquete }) {
           <ul className="mt-2 flex flex-col gap-0.5">
             {paquete.incluye.map((item) => (
               <li key={item} className="font-body text-xs text-navy/70 flex items-center gap-1.5">
-                <span className="text-gold-dark">✓</span> {item}
+                <span className="text-navy">✓</span> {item}
               </li>
             ))}
           </ul>
@@ -58,7 +58,7 @@ export default function PaqueteCard({ paquete }: { paquete: Paquete }) {
 
         <div className="mt-auto pt-3">
           {paquete.precio_base_cop != null && (
-            <p className="font-body text-sm text-gold-dark font-medium">
+            <p className="font-body text-sm text-navy font-semibold">
               Desde {formatearPrecio(paquete.precio_base_cop)} COP
             </p>
           )}
@@ -68,7 +68,7 @@ export default function PaqueteCard({ paquete }: { paquete: Paquete }) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-2 w-full text-center bg-navy text-cream text-xs font-body font-medium py-2 rounded hover:bg-navy-light transition-colors"
+            className="inline-block mt-2 w-full text-center bg-gold text-navy text-xs font-body font-medium py-2 rounded hover:bg-gold-dark transition-colors"
           >
             Consultar esta tarifa
           </a>

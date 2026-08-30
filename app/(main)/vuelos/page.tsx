@@ -3,21 +3,19 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Vuelos — Welk Travel',
-  description: 'Cotiza vuelos nacionales e internacionales con Welk Travel.',
+  description: 'Cotizamos vuelos nacionales e internacionales buscando la mejor combinación de precio, horario y aerolínea para tu viaje. Cuéntanos tu destino y fechas y te enviamos opciones sin compromiso.',
 };
 
 export default function VuelosPage() {
   return (
-    <section className="bg-navy px-6 py-16">
+    <section className="bg-white px-6 py-16">
       <div className="max-w-3xl mx-auto text-center">
-        <p className="font-body text-xs text-gold tracking-[0.2em] mb-2">VUELOS</p>
-        <h1 className="font-title text-3xl text-cream font-semibold mb-4">
+        <p className="font-body text-xs text-navy font-medium tracking-[0.2em] mb-2">VUELOS</p>
+        <h1 className="font-title text-3xl text-navy font-semibold mb-4">
           Vuelos a tu medida
         </h1>
-        <p className="font-body text-sm md:text-base text-mauve mb-8 max-w-xl mx-auto">
-          Cotizamos vuelos nacionales e internacionales buscando la mejor combinación
-          de precio, horario y aerolínea para tu viaje. Cuéntanos tu destino y fechas
-          y te enviamos opciones sin compromiso.
+        <p className="font-body text-sm md:text-base text-slate mb-8 max-w-xl mx-auto text-justify">
+          Cotizamos vuelos nacionales e internacionales buscando la mejor combinación de precio, horario y aerolínea para tu viaje. Cuéntanos tu destino y fechas y te enviamos opciones sin compromiso.
         </p>
         <Link
           href="/#contacto"

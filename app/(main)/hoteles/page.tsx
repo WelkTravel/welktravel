@@ -3,27 +3,25 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Hoteles — Welk Travel',
-  description: 'Reserva hoteles y alojamientos con Welk Travel.',
+  description: 'Bloqueamos habitaciones con tarifas preferenciales de operador mayorista en cadenas hoteleras de todo el mundo. Cuéntanos tu destino, fechas y número de viajeros y armamos la mejor opción para ti.',
 };
 
 export default function HotelesPage() {
   return (
-    <section className="bg-navy px-6 py-16">
+    <section className="bg-white px-6 py-16">
       <div className="max-w-3xl mx-auto text-center">
-        <p className="font-body text-xs text-gold tracking-[0.2em] mb-2">HOTELES</p>
-        <h1 className="font-title text-3xl text-cream font-semibold mb-4">
-          El hospedaje correcto para cada viaje
+        <p className="font-body text-xs text-navy font-medium tracking-[0.2em] mb-2">HOTELES</p>
+        <h1 className="font-title text-3xl text-navy font-semibold mb-4">
+          Hoteles a tu medida
         </h1>
-        <p className="font-body text-sm md:text-base text-mauve mb-8 max-w-xl mx-auto">
-          Desde hoteles boutique hasta resorts todo incluido: te ayudamos a elegir el
-          alojamiento que mejor se ajusta a tu presupuesto y al tipo de viaje que
-          quieres vivir.
+        <p className="font-body text-sm md:text-base text-slate mb-8 max-w-xl mx-auto text-justify">
+          Bloqueamos habitaciones con tarifas preferenciales de operador mayorista en cadenas hoteleras de todo el mundo. Cuéntanos tu destino, fechas y número de viajeros y armamos la mejor opción para ti.
         </p>
         <Link
           href="/#contacto"
           className="inline-block bg-gold text-navy text-sm font-body font-medium px-6 py-2.5 rounded hover:bg-gold-dark transition-colors"
         >
-          Cotiza tu hospedaje
+          Cotiza tu hotel ahora
         </Link>
       </div>
     </section>

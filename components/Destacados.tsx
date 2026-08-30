@@ -19,15 +19,15 @@ export default async function Destacados() {
   const lista = (paquetes ?? []) as Paquete[];
 
   return (
-    <section id="planes" className="bg-cream px-6 py-10 scroll-mt-20">
-      <p className="font-body text-xs text-navy/60 mb-1 max-w-6xl mx-auto">
+    <section id="planes" className="bg-white px-6 py-10 scroll-mt-20">
+      <p className="font-body text-xs text-navy font-medium mb-1 max-w-6xl mx-auto">
         Nuestros Planes
       </p>
       <h2 className="font-title text-2xl text-navy font-semibold mb-4 max-w-6xl mx-auto">
         Ofertas con tarifas de operador mayorista
       </h2>
       {lista.length === 0 ? (
-        <p className="font-body text-sm text-navy/50 max-w-6xl mx-auto">
+        <p className="font-body text-sm text-slate max-w-6xl mx-auto">
           Todavía no hay paquetes cargados.
         </p>
       ) : (

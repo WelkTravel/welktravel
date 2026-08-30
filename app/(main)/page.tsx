@@ -17,11 +17,13 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'TravelAgency',
   name: 'Welk Travel',
-  description: 'Vuelos, hoteles y paquetes turísticos hechos a tu medida.',
+  description: 'Vuelos, hoteles, paquetes, cruceros y circuitos turísticos hechos a tu medida.',
   url: 'https://welktravel.com', // TODO: reemplazar por el dominio real
   image: 'https://welktravel.com/logo-principal.png', // TODO: reemplazar por el dominio real
+  taxID: '902087020-3',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'KR 14 No. 63-73',
     addressLocality: 'Bogotá',
     addressCountry: 'CO',
   },

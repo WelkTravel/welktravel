@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     default: 'Welk Travel — Explora sin límites',
     template: '%s — Welk Travel',
   },
-  description: 'Vuelos, hoteles y paquetes turísticos hechos a tu medida.',
+  description: 'Vuelos, hoteles, paquetes, cruceros y circuitos turísticos hechos a tu medida.',
   openGraph: {
     title: 'Welk Travel — Explora sin límites',
-    description: 'Vuelos, hoteles y paquetes turísticos hechos a tu medida.',
+    description: 'Vuelos, hoteles, paquetes, cruceros y circuitos turísticos hechos a tu medida.',
     url: siteUrl,
     siteName: 'Welk Travel',
     images: ['/logo-principal.png'],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Welk Travel — Explora sin límites',
-    description: 'Vuelos, hoteles y paquetes turísticos hechos a tu medida.',
+    description: 'Vuelos, hoteles, paquetes, cruceros y circuitos turísticos hechos a tu medida.',
     images: ['/logo-principal.png'],
   },
 };

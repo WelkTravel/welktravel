@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // de co-branding en esta página están autorizados antes de lanzar la campaña.
 export default function RomanceBogotaPage() {
   return (
-    <main className="min-h-screen bg-navy flex flex-col items-center justify-center px-6 py-16 text-center">
+    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-16 text-center">
       <Image
         src="/isotipo.png"
         alt="Welk Travel"
@@ -23,14 +23,14 @@ export default function RomanceBogotaPage() {
         priority
       />
 
-      <p className="font-body text-xs text-gold tracking-[0.2em] mb-3">
+      <p className="font-body text-xs text-navy font-medium tracking-[0.2em] mb-3">
         LUNA DE MIEL · ANIVERSARIOS · PEDIDAS DE MANO
       </p>
-      <h1 className="font-title text-3xl md:text-5xl text-cream font-semibold max-w-2xl leading-tight">
+      <h1 className="font-title text-3xl md:text-5xl text-navy font-semibold max-w-2xl leading-tight">
         El viaje de tu vida empieza aquí. Coordinamos tu luna de miel soñada
         desde Bogotá.
       </h1>
-      <p className="font-body text-sm md:text-base text-mauve mt-5 max-w-xl">
+      <p className="font-body text-sm md:text-base text-slate mt-5 max-w-xl text-justify">
         Planifica la logística y los momentos íntimos de tu evento en Bogotá
         con la creatividad de Cómplices, y asegura la hotelería internacional
         del más alto nivel con tarifas de operador mayorista y respaldo

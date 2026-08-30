@@ -1,14 +1,14 @@
 export default function ConserjeriaAerea() {
   return (
-    <section id="conserjeria-aerea" className="bg-navy px-6 py-12 scroll-mt-20">
+    <section id="conserjeria-aerea" className="bg-white px-6 py-12 scroll-mt-20">
       <div className="max-w-3xl mx-auto text-center">
-        <p className="font-body text-xs text-gold tracking-[0.2em] mb-2">
+        <p className="font-body text-xs text-navy font-medium tracking-[0.2em] mb-2">
           TRANSPARENCIA
         </p>
-        <h2 className="font-title text-2xl md:text-3xl text-cream font-semibold mb-4">
+        <h2 className="font-title text-2xl md:text-3xl text-navy font-semibold mb-4">
           Conserjería Aérea: tus vuelos con total transparencia desde Colombia
         </h2>
-        <p className="font-body text-sm md:text-base text-mauve leading-relaxed">
+        <p className="font-body text-sm md:text-base text-slate leading-relaxed text-justify">
           En Welk Travel optimizamos tu presupuesto al máximo. Nosotros
           bloqueamos y reservamos tus hoteles, traslados y tours con tarifas
           preferenciales de operador mayorista. Para tus tiquetes aéreos,

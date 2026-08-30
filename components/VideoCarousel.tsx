@@ -26,7 +26,7 @@ function VideoSlide({ video }: { video: Video }) {
             className="w-full h-full object-cover"
           />
           <span className="absolute inset-0 flex items-center justify-center bg-navy/30 group-hover:bg-navy/40 transition-colors">
-            <span className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-navy text-lg">
+            <span className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-navy text-lg">
               ▶
             </span>
           </span>
@@ -47,8 +47,8 @@ function VideoSlide({ video }: { video: Video }) {
 export default function VideoCarousel({ videos }: { videos: Video[] }) {
   if (videos.length === 0) {
     return (
-      <section className="bg-cream px-6 py-6">
-        <p className="font-body text-sm text-navy/50 max-w-6xl mx-auto">
+      <section className="bg-cloud px-6 py-6">
+        <p className="font-body text-sm text-slate max-w-6xl mx-auto">
           Todavía no hay videos promocionales cargados.
         </p>
       </section>
@@ -56,8 +56,8 @@ export default function VideoCarousel({ videos }: { videos: Video[] }) {
   }
 
   return (
-    <section className="bg-cream px-6 py-10">
-      <p className="font-body text-xs text-navy/60 mb-3 max-w-6xl mx-auto">
+    <section className="bg-cloud px-6 py-10">
+      <p className="font-body text-xs text-navy font-medium mb-3 max-w-6xl mx-auto">
         Carrusel de videos promocionales
       </p>
       <div className="max-w-2xl mx-auto">

@@ -62,14 +62,14 @@ export default function FormularioContacto() {
   const enviando = estado === 'enviando';
 
   return (
-    <section id="contacto" className="bg-cream px-6 py-10">
+    <section id="contacto" className="bg-white px-6 py-10">
       <div className="max-w-md mx-auto bg-navy rounded-md p-6 text-center">
         <h2 className="font-title text-lg text-cream mb-4">
           ¿Listo para tu próximo viaje?
         </h2>
 
         <form onSubmit={handleSubmit} className="text-left">
-          <label className="font-body text-xs text-mauve block mb-1">
+          <label className="font-body text-xs text-mist block mb-1">
             Nombre completo
           </label>
           <input
@@ -81,12 +81,12 @@ export default function FormularioContacto() {
             }}
             placeholder="Tu nombre"
             disabled={enviando}
-            className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-mid text-cream outline-none border disabled:opacity-60 ${
+            className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-deep text-cream outline-none border disabled:opacity-60 ${
               estado === 'error' && !nombre.trim() ? 'border-error' : 'border-navy-light'
             }`}
           />
 
-          <label className="font-body text-xs text-mauve block mb-1 mt-3">
+          <label className="font-body text-xs text-mist block mb-1 mt-3">
             Correo electrónico
           </label>
           <input
@@ -98,7 +98,7 @@ export default function FormularioContacto() {
             }}
             placeholder="tucorreo@ejemplo.com"
             disabled={enviando}
-            className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-mid text-cream outline-none border disabled:opacity-60 ${
+            className={`w-full rounded px-3 py-2 text-sm font-body bg-navy-deep text-cream outline-none border disabled:opacity-60 ${
               estado === 'error' && !validarCorreo(correo) ? 'border-error' : 'border-navy-light'
             }`}
           />
@@ -109,7 +109,7 @@ export default function FormularioContacto() {
             </p>
           )}
 
-          <label className="font-body text-xs text-mauve block mb-1 mt-3">
+          <label className="font-body text-xs text-mist block mb-1 mt-3">
             WhatsApp / teléfono (opcional)
           </label>
           <input
@@ -118,10 +118,10 @@ export default function FormularioContacto() {
             onChange={(e) => setTelefono(e.target.value)}
             placeholder="300 123 4567"
             disabled={enviando}
-            className="w-full rounded px-3 py-2 text-sm font-body bg-navy-mid text-cream outline-none border border-navy-light disabled:opacity-60"
+            className="w-full rounded px-3 py-2 text-sm font-body bg-navy-deep text-cream outline-none border border-navy-light disabled:opacity-60"
           />
 
-          <label className="font-body text-xs text-mauve block mb-1 mt-3">
+          <label className="font-body text-xs text-mist block mb-1 mt-3">
             ¿A dónde quieres viajar? (opcional)
           </label>
           <input
@@ -130,7 +130,7 @@ export default function FormularioContacto() {
             onChange={(e) => setDestino(e.target.value)}
             placeholder="Ej. San Andrés, Cartagena..."
             disabled={enviando}
-            className="w-full rounded px-3 py-2 text-sm font-body bg-navy-mid text-cream outline-none border border-navy-light disabled:opacity-60"
+            className="w-full rounded px-3 py-2 text-sm font-body bg-navy-deep text-cream outline-none border border-navy-light disabled:opacity-60"
           />
 
           <label className="flex items-start gap-2 mt-4 cursor-pointer select-none">
@@ -142,11 +142,11 @@ export default function FormularioContacto() {
                 if (estado === 'error-politica') setEstado('idle');
               }}
               disabled={enviando}
-              className="mt-0.5 h-4 w-4 shrink-0 accent-gold"
+              className="mt-0.5 h-4 w-4 shrink-0 accent-cream"
             />
-            <span className="font-body text-xs text-mauve">
+            <span className="font-body text-xs text-mist text-justify">
               Acepto la{' '}
-              <a href="/politica-de-tratamiento-de-datos" className="text-gold hover:underline">
+              <a href="/politica-de-tratamiento-de-datos" className="text-cream underline">
                 política de tratamiento de datos personales
               </a>
             </span>
@@ -165,7 +165,7 @@ export default function FormularioContacto() {
           )}
 
           {estado === 'enviado' && (
-            <p className="font-body text-xs text-gold-dark mt-3">
+            <p className="font-body text-xs text-cream font-semibold mt-3">
               ✓ Cotización enviada. Te contactaremos muy pronto.
             </p>
           )}
@@ -173,7 +173,7 @@ export default function FormularioContacto() {
           <button
             type="submit"
             disabled={enviando}
-            className="w-full mt-4 bg-gold text-navy text-sm font-body font-medium py-2 rounded disabled:opacity-60"
+            className="w-full mt-4 bg-gold text-navy text-sm font-body font-medium py-2 rounded hover:bg-gold-dark transition-colors disabled:opacity-60"
           >
             {enviando ? 'Enviando...' : 'Cotizar ahora'}
           </button>

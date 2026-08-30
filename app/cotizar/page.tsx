@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function CotizarPage() {
   return (
-    <main className="min-h-screen bg-navy flex items-center justify-center px-6 py-12">
+    <main className="min-h-screen bg-white flex items-center justify-center px-6 py-12">
       <div className="max-w-3xl w-full flex flex-col md:flex-row items-center gap-10">
         <div className="flex flex-col items-center md:items-start text-center md:text-left flex-shrink-0 md:w-1/2">
           <Image
@@ -24,20 +24,22 @@ export default function CotizarPage() {
             className="w-32 h-auto md:w-40"
             priority
           />
-          <span className="font-title text-cream text-xl font-semibold tracking-wide mt-2">
+          <span className="font-title text-navy text-xl font-semibold tracking-wide mt-2">
             WELK TRAVEL
           </span>
-          <p className="font-body text-sm text-mauve mt-4 max-w-sm">
+          <p className="font-body text-sm text-slate mt-4 max-w-sm text-justify">
             Cuéntanos tu destino soñado y nuestro equipo diseñará una
             propuesta a la medida usando tarifas exclusivas de operador
-            mayorista.
+            mayorista — para paquetes, cruceros y circuitos.
           </p>
         </div>
 
         <div className="md:w-1/2 flex justify-center">
-          <Suspense fallback={null}>
-            <FormularioCotizar origenRuta="/cotizar" />
-          </Suspense>
+          <div className="bg-navy rounded-md p-6 w-full max-w-sm">
+            <Suspense fallback={null}>
+              <FormularioCotizar origenRuta="/cotizar" />
+            </Suspense>
+          </div>
         </div>
       </div>
     </main>

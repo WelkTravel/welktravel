@@ -15,7 +15,7 @@ const preguntas = [
   {
     pregunta: '¿Cuáles son los medios de pago?',
     respuesta:
-      'Aceptamos pago seguro por los medios que te indicaremos al confirmar tu cotización. Si necesitas facturación especial, cuéntanoslo al momento de cotizar.',
+      'Te compartimos los medios de pago disponibles al confirmar tu cotización. Si necesitas facturación especial, cuéntanoslo al momento de cotizar.',
   },
   {
     pregunta: '¿Con cuánta anticipación debo cotizar mi viaje?',
@@ -44,16 +44,16 @@ const jsonLd = {
 
 export default function PreguntasFrecuentesPage() {
   return (
-    <section className="bg-navy px-6 py-16">
+    <section className="bg-white px-6 py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="max-w-3xl mx-auto">
-        <p className="font-body text-xs text-gold tracking-[0.2em] mb-2 text-center">
+        <p className="font-body text-xs text-navy font-medium tracking-[0.2em] mb-2 text-center">
           AYUDA
         </p>
-        <h1 className="font-title text-3xl text-cream font-semibold mb-8 text-center">
+        <h1 className="font-title text-3xl text-navy font-semibold mb-8 text-center">
           Preguntas frecuentes
         </h1>
 
@@ -61,17 +61,17 @@ export default function PreguntasFrecuentesPage() {
           {preguntas.map((item) => (
             <div
               key={item.pregunta}
-              className="bg-navy-mid border border-navy-light rounded-md p-4"
+              className="bg-cloud border border-navy-light/20 rounded-md p-4"
             >
-              <p className="font-title text-cream text-base mb-2">{item.pregunta}</p>
-              <p className="font-body text-sm text-mauve">{item.respuesta}</p>
+              <p className="font-title text-navy text-base mb-2">{item.pregunta}</p>
+              <p className="font-body text-sm text-slate text-justify">{item.respuesta}</p>
             </div>
           ))}
         </div>
 
-        <p className="font-body text-sm text-mauve text-center mt-8">
+        <p className="font-body text-sm text-slate text-center mt-8">
           ¿No encontraste lo que buscabas?{' '}
-          <Link href="/#contacto" className="text-gold hover:underline">
+          <Link href="/#contacto" className="text-navy font-medium hover:underline">
             Escríbenos aquí
           </Link>
           .

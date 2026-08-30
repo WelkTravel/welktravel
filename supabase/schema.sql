@@ -82,6 +82,28 @@ create policy "Lectura pública de testimonios publicados"
   using (publicado = true);
 
 -- ------------------------------------------------------------
+-- pqrs: peticiones, quejas, reclamos y sugerencias del servicio.
+-- Se maneja separada de leads_growth porque es atención al cliente,
+-- no un lead comercial.
+-- ------------------------------------------------------------
+create table if not exists public.pqrs (
+  id uuid primary key default gen_random_uuid(),
+  tipo text not null check (tipo in ('peticion', 'queja', 'reclamo', 'sugerencia')),
+  nombre_completo text not null,
+  correo text not null,
+  mensaje text not null,
+  fecha_registro timestamptz not null default now()
+);
+
+alter table public.pqrs enable row level security;
+
+create policy "Cualquiera puede radicar un PQRS"
+  on public.pqrs
+  for insert
+  to anon
+  with check (true);
+
+-- ------------------------------------------------------------
 -- Notificación en tiempo real de nuevos leads (recomendado):
 -- Configura un Database Webhook en Supabase (Database > Webhooks)
 -- que dispare un HTTP POST hacia la función de Edge
