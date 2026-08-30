@@ -33,11 +33,12 @@ export default function FormularioContacto() {
 
     try {
       const supabase = createBrowserClient();
-      const { error } = await supabase.from('cotizaciones').insert({
-        nombre: nombre.trim(),
+      const { error } = await supabase.from('leads_growth').insert({
+        nombre_completo: nombre.trim(),
         correo: correo.trim(),
-        telefono: telefono.trim() || null,
-        destino: destino.trim() || null,
+        whatsapp_contacto: telefono.trim() || null,
+        destino_interes: destino.trim() || null,
+        origen_ruta: '/',
       });
 
       if (error) {

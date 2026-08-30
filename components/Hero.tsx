@@ -8,8 +8,8 @@ export default function Hero() {
           <Image
             src="/isotipo.png"
             alt="Welk Travel"
-            width={873}
-            height={834}
+            width={500}
+            height={477}
             className="w-full h-auto"
             priority
           />
@@ -22,19 +22,22 @@ export default function Hero() {
         </div>
 
         <div className="text-center md:text-left">
-          <h1 className="font-title text-3xl md:text-4xl font-semibold text-cream mb-3">
-            Explora sin límites
+          <h1 className="font-title text-2xl md:text-4xl font-semibold text-cream mb-3 leading-tight">
+            Viajes internacionales a la medida desde Colombia, con tarifas de
+            operador mayorista.
           </h1>
           <p className="font-body text-sm md:text-base text-mauve mb-6 max-w-md">
-            Vuelos, hoteles, paquetes y experiencias turísticas a la medida de tu
-            próxima aventura. Cuéntanos a dónde quieres ir y nosotros nos
-            encargamos de todo lo demás.
+            Diseñamos tu itinerario ideal sin intermediarios ocultos. Disfruta
+            del Caribe y el mundo entero con respaldo logístico de operadores
+            mayoristas de trayectoria comprobada.
           </p>
           <a
-            href="#contacto"
-            className="inline-block bg-gold text-navy text-sm font-body font-medium px-6 py-2.5 rounded hover:bg-gold-dark transition-colors"
+            href="https://wa.me/573001234567?text=Hola%20Welk%20Travel%2C%20quiero%20iniciar%20una%20cotizaci%C3%B3n"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gold text-navy text-sm font-body font-medium px-6 py-3 rounded hover:bg-gold-dark transition-colors"
           >
-            Cotiza tu viaje ahora
+            Iniciar cotización en vivo por WhatsApp
           </a>
         </div>
       </div>
