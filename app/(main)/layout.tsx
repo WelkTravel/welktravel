@@ -50,14 +50,6 @@ export default function MainLayout({
             <Link href="/#cruceros" className="hover:text-white transition-colors">Cruceros</Link>
             <Link href="/#circuitos" className="hover:text-white transition-colors">Circuitos</Link>
             <Link href="/#conserjeria-aerea" className="hover:text-white transition-colors">Vuelos</Link>
-            <a
-              href="https://wa.me/573001234567?text=Hola%20Welk%20Travel%2C%20quiero%20cotizar%20un%20viaje"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gold text-navy font-medium px-4 py-2 rounded hover:bg-gold-dark transition-colors whitespace-nowrap"
-            >
-              Cotizar por WhatsApp
-            </a>
           </nav>
         </div>
       </header>
