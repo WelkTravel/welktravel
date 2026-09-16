@@ -12,15 +12,6 @@ const nextConfig: NextConfig = {
         hostname: '**.supabase.co',
         pathname: '/storage/v1/object/public/**',
       },
-<<<<<<< HEAD
-      {
-        // Fotos de referencia de Unsplash usadas en las tarjetas de destinos.
-        // TODO: reemplazar por fotografía propia antes de lanzar a producción.
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-=======
->>>>>>> 175c97d73fe7fbecef194af1fd4202024d698cdc
     ],
   },
 };
