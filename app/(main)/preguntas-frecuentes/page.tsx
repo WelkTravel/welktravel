@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import BotonContactenos from '@/components/BotonContactenos';
 
 export const metadata: Metadata = {
   title: 'Preguntas frecuentes — Welk Travel',
@@ -71,9 +71,9 @@ export default function PreguntasFrecuentesPage() {
 
         <p className="font-body text-sm text-slate text-center mt-8">
           ¿No encontraste lo que buscabas?{' '}
-          <Link href="/#contacto" className="text-navy font-medium hover:underline">
+          <BotonContactenos className="text-navy font-medium hover:underline">
             Escríbenos aquí
-          </Link>
+          </BotonContactenos>
           .
         </p>
       </div>

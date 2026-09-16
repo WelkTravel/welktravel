@@ -3,15 +3,10 @@ import type { MetadataRoute } from 'next';
 const baseUrl = 'https://welktravel.com'; // TODO: reemplazar por el dominio real
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Solo rutas indexables. /cotizar, /romance-bogota y /gracias quedan fuera
-  // a propósito (ver robots.ts y el noindex en cada page.tsx).
+  // Landing de una sola página: los servicios (paquetes, hoteles, cruceros,
+  // circuitos) viven como secciones ancla del Home, no como rutas propias.
   const rutas = [
     '',
-    '/vuelos',
-    '/hoteles',
-    '/paquetes',
-    '/cruceros',
-    '/circuitos',
     '/preguntas-frecuentes',
     '/blog',
     '/pqrs',
