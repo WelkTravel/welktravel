@@ -1,8 +1,14 @@
 // Regenera la página cada 5 minutos en vez de golpear Supabase en cada visita.
+<<<<<<< HEAD
+=======
+// Si necesitas ver cambios al instante mientras cargas datos de prueba, puedes
+// bajarlo temporalmente (ej. revalidate = 0) y volver a subirlo después.
+>>>>>>> 175c97d73fe7fbecef194af1fd4202024d698cdc
 export const revalidate = 300;
 
 import { createServerClient } from '@/lib/supabase/server';
 import Hero from '@/components/Hero';
+<<<<<<< HEAD
 import SelloAutoridad from '@/components/SelloAutoridad';
 import Destacados from '@/components/Destacados';
 import SeccionServicio, { Destino } from '@/components/SeccionServicio';
@@ -13,6 +19,15 @@ import BotonContactenos from '@/components/BotonContactenos';
 
 const UNSPLASH = (id: string) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=80`;
+=======
+import Categorias from '@/components/Categorias';
+import SelloAutoridad from '@/components/SelloAutoridad';
+import Destacados from '@/components/Destacados';
+import ConserjeriaAerea from '@/components/ConserjeriaAerea';
+import VideoCarousel, { Video } from '@/components/VideoCarousel';
+import Testimonios from '@/components/Testimonios';
+import FormularioContacto from '@/components/FormularioContacto';
+>>>>>>> 175c97d73fe7fbecef194af1fd4202024d698cdc
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -33,6 +48,7 @@ const jsonLd = {
   ],
 };
 
+<<<<<<< HEAD
 // Destinos seleccionados según el criterio de mayor consumo de viajeros
 // colombianos por categoría (fuente: comportamiento típico reportado por
 // agencias y operadores mayoristas — ajustar si tienen datos propios de
@@ -109,6 +125,8 @@ const destinosCircuitos: Destino[] = [
   },
 ];
 
+=======
+>>>>>>> 175c97d73fe7fbecef194af1fd4202024d698cdc
 export default async function Home() {
   const supabase = createServerClient();
 
@@ -129,6 +147,7 @@ export default async function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero />
+<<<<<<< HEAD
       <SelloAutoridad />
       <Destacados />
 
@@ -188,6 +207,15 @@ export default async function Home() {
           Contáctenos
         </BotonContactenos>
       </section>
+=======
+      <Categorias />
+      <SelloAutoridad />
+      <Destacados />
+      <ConserjeriaAerea />
+      <VideoCarousel videos={videos} />
+      <Testimonios />
+      <FormularioContacto />
+>>>>>>> 175c97d73fe7fbecef194af1fd4202024d698cdc
     </>
   );
 }
