@@ -3,6 +3,7 @@ import { Playfair_Display, Montserrat } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import WhatsAppFlotante from '@/components/WhatsAppFlotante';
+import { ModalCotizarProvider, ModalCotizar } from '@/components/ModalCotizar';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -70,7 +71,10 @@ export default function RootLayout({
             />
           </noscript>
         )}
-      {children}
+        <ModalCotizarProvider>
+          {children}
+          <ModalCotizar />
+        </ModalCotizarProvider>
         <WhatsAppFlotante numero="573001234567" />
       </body>
     </html>
