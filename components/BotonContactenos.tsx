@@ -12,7 +12,11 @@ export default function BotonContactenos({
   const { abrirModal } = useModalCotizar();
 
   return (
-    <button type="button" onClick={abrirModal} className={className}>
+    <button
+      type="button"
+      onClick={abrirModal}
+      className={`cursor-pointer ${className}`}
+    >
       {children}
     </button>
   );

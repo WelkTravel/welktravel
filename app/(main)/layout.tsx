@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import BotonContactenos from '@/components/BotonContactenos';
+import MenuMovil from '@/components/MenuMovil';
 
 const enlacesInstitucionales = [
   { nombre: 'SIC', href: 'https://www.sic.gov.co' },
@@ -51,6 +52,7 @@ export default function MainLayout({
             <Link href="/#circuitos" className="hover:text-white transition-colors">Circuitos</Link>
             <Link href="/#conserjeria-aerea" className="hover:text-white transition-colors">Vuelos</Link>
           </nav>
+          <MenuMovil />
         </div>
       </header>
 
@@ -102,7 +104,7 @@ export default function MainLayout({
                     {e.nombre}
                   </Link>
                 ))}
-                <BotonContactenos className="font-body text-xs text-mist hover:text-white transition-colors text-left">
+                <BotonContactenos className="font-body text-xs text-mist hover:text-white transition-colors text-center sm:text-left">
                   Contacto
                 </BotonContactenos>
               </nav>

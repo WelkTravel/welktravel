@@ -32,14 +32,6 @@ export default function Hero() {
             con respaldo logístico de operadores mayoristas de trayectoria
             comprobada.
           </p>
-          <a
-            href="https://wa.me/573001234567?text=Hola%20Welk%20Travel%2C%20quiero%20iniciar%20una%20cotizaci%C3%B3n"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gold text-navy text-sm font-body font-medium px-6 py-3 rounded hover:bg-gold-dark transition-colors"
-          >
-            Iniciar cotización en vivo por WhatsApp
-          </a>
         </div>
       </div>
     </section>

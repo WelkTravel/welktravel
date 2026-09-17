@@ -45,15 +45,7 @@ function VideoSlide({ video }: { video: Video }) {
 }
 
 export default function VideoCarousel({ videos }: { videos: Video[] }) {
-  if (videos.length === 0) {
-    return (
-      <section className="bg-cloud px-6 py-6">
-        <p className="font-body text-sm text-slate max-w-6xl mx-auto">
-          Todavía no hay videos promocionales cargados.
-        </p>
-      </section>
-    );
-  }
+  if (videos.length === 0) return null;
 
   return (
     <section className="bg-cloud px-6 py-10">
