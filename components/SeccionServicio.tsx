@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import BotonContactenos from './BotonContactenos';
+import MiniaturaVideoYoutube from './MiniaturaVideoYoutube';
 
 export type Destino = {
   nombre: string;
   imagen: string;
   descripcion: string;
+  youtubeId?: string;
 };
 
 export default function SeccionServicio({
@@ -46,14 +48,22 @@ export default function SeccionServicio({
               key={destino.nombre}
               className="bg-white rounded-md overflow-hidden border border-navy-light/15 flex flex-col"
             >
-              <div className="relative h-44">
-                <Image
-                  src={destino.imagen}
-                  alt={destino.nombre}
-                  fill
-                  sizes="(max-width: 640px) 100vw, 33vw"
-                  className="object-cover"
-                />
+              <div className="relative aspect-video">
+                {destino.youtubeId ? (
+                  <MiniaturaVideoYoutube
+                    youtubeId={destino.youtubeId}
+                    imagen={destino.imagen}
+                    titulo={destino.nombre}
+                  />
+                ) : (
+                  <Image
+                    src={destino.imagen}
+                    alt={destino.nombre}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                )}
               </div>
               <div className="p-4 flex flex-col flex-1">
                 <p className="font-title text-navy text-base mb-1">{destino.nombre}</p>
