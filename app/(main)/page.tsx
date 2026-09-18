@@ -42,6 +42,7 @@ const destinosPaquetes: Destino[] = [
     nombre: 'Cancún',
     imagen: UNSPLASH('photo-1509818139432-c67e4197a914'),
     descripcion: 'El destino de playa más reservado por colombianos: todo incluido, hoteles frente al mar y vida nocturna.',
+    youtubeId: 'aPemg631cxA',
   },
   {
     nombre: 'Riviera Maya',
