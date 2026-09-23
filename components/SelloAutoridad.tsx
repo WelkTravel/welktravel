@@ -9,28 +9,12 @@
 const mensaje =
   'Viaja con total seguridad. Welk Travel trabaja con operadores mayoristas internacionales de trayectoria comprobada para ofrecerte tarifas preferenciales y respaldo logístico en todo tu viaje, ya sea un paquete, un crucero o un circuito por varios destinos.';
 
-const marcasAliadas = ['Amresorts', 'Palace Resorts', 'Iberostar'];
-
 export default function SelloAutoridad() {
   return (
     <section id="respaldo" className="bg-cloud px-6 py-10 scroll-mt-20">
       <div className="max-w-3xl mx-auto text-center">
         <p className="font-body text-sm md:text-base text-navy leading-relaxed text-justify">
           {mensaje}
-        </p>
-        <div className="flex flex-wrap justify-center gap-6 mt-6">
-          {marcasAliadas.map((marca) => (
-            <span
-              key={marca}
-              className="font-title text-slate text-sm tracking-wide opacity-80"
-            >
-              {marca}
-            </span>
-          ))}
-        </div>
-        <p className="font-body text-[11px] text-slate/70 mt-4">
-          * Nombres de marca a modo referencial — actualizar con los aliados
-          reales confirmados antes de publicar.
         </p>
       </div>
     </section>

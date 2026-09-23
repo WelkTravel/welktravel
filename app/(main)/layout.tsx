@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import BotonContactenos from '@/components/BotonContactenos';
+import MenuMovil from '@/components/MenuMovil';
 
 const enlacesInstitucionales = [
   { nombre: 'SIC', href: 'https://www.sic.gov.co' },
@@ -43,19 +45,14 @@ export default function MainLayout({
               WELK TRAVEL
             </span>
           </Link>
-          <nav className="hidden md:flex gap-6 text-sm text-mist font-body items-center">
-            <Link href="/#planes" className="hover:text-white transition-colors">Nuestros Planes</Link>
-            <Link href="/#conserjeria-aerea" className="hover:text-white transition-colors">Conserjería Aérea</Link>
-            <Link href="/#respaldo" className="hover:text-white transition-colors">Respaldo Operativo</Link>
-            <a
-              href="https://wa.me/573001234567?text=Hola%20Welk%20Travel%2C%20quiero%20cotizar%20un%20viaje"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gold text-navy font-medium px-4 py-2 rounded hover:bg-gold-dark transition-colors"
-            >
-              Cotizar por WhatsApp
-            </a>
+          <nav className="hidden lg:flex gap-5 text-sm text-mist font-body items-center">
+            <Link href="/#paquetes" className="hover:text-white transition-colors">Paquetes</Link>
+            <Link href="/#hoteles" className="hover:text-white transition-colors">Hoteles</Link>
+            <Link href="/#cruceros" className="hover:text-white transition-colors">Cruceros</Link>
+            <Link href="/#circuitos" className="hover:text-white transition-colors">Circuitos</Link>
+            <Link href="/#conserjeria-aerea" className="hover:text-white transition-colors">Vuelos</Link>
           </nav>
+          <MenuMovil />
         </div>
       </header>
 
@@ -107,9 +104,9 @@ export default function MainLayout({
                     {e.nombre}
                   </Link>
                 ))}
-                <Link href="/#contacto" className="font-body text-xs text-mist hover:text-white transition-colors">
+                <BotonContactenos className="font-body text-xs text-mist hover:text-white transition-colors text-center sm:text-left">
                   Contacto
-                </Link>
+                </BotonContactenos>
               </nav>
             </div>
 

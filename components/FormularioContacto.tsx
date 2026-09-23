@@ -62,10 +62,9 @@ export default function FormularioContacto() {
   const enviando = estado === 'enviando';
 
   return (
-    <section id="contacto" className="bg-white px-6 py-10">
-      <div className="max-w-md mx-auto bg-navy rounded-md p-6 text-center">
-        <h2 className="font-title text-lg text-cream mb-4">
-          ¿Listo para tu próximo viaje?
+    <div className="bg-navy rounded-md p-6 text-center shadow-2xl">
+      <h2 className="font-title text-lg text-cream mb-4">
+        ¿Listo para tu próximo viaje?
         </h2>
 
         <form onSubmit={handleSubmit} className="text-left">
@@ -177,8 +176,7 @@ export default function FormularioContacto() {
           >
             {enviando ? 'Enviando...' : 'Cotizar ahora'}
           </button>
-        </form>
-      </div>
-    </section>
+      </form>
+    </div>
   );
 }
