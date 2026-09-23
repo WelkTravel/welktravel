@@ -17,8 +17,8 @@ export default function RomanceBogotaPage() {
       <Image
         src="/isotipo.png"
         alt="Welk Travel"
-        width={140}
-        height={134}
+        width={900}
+        height={643}
         className="w-24 h-auto mb-6"
         priority
       />

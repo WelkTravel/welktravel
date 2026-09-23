@@ -19,8 +19,8 @@ export default function CotizarPage() {
           <Image
             src="/isotipo.png"
             alt="Welk Travel"
-            width={200}
-            height={191}
+            width={900}
+            height={643}
             className="w-32 h-auto md:w-40"
             priority
           />

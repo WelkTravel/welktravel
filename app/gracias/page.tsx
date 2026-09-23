@@ -13,8 +13,8 @@ export default function GraciasPage() {
       <Image
         src="/isotipo.png"
         alt="Welk Travel"
-        width={120}
-        height={115}
+        width={900}
+        height={643}
         className="w-20 h-auto mb-6"
         priority
       />

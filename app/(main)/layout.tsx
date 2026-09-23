@@ -36,8 +36,8 @@ export default function MainLayout({
             <Image
               src="/isotipo.png"
               alt="Welk Travel"
-              width={46}
-              height={44}
+              width={900}
+              height={643}
               className="h-11 w-auto"
               priority
             />
